@@ -4,12 +4,21 @@
             <div class="flex items-center">
                 <h2 class="text-2xl font-bold text-gray-900">DataByLex</h2>
             </div>
-            <div class="flex items-center space-x-4">
-                <a href="#home" class="text-gray-900 hover:text-blue-600">Home</a>
-                <a href="#services" class="text-gray-900 hover:text-blue-600">Services</a>
-                <a href="#why-us" class="text-gray-900 hover:text-blue-600">Why Us</a>
+            <div class="flex items-center sm:hidden">
+                <button onclick="toggleMenu()" class="text-gray-900 text-2xl">☰</button>
+            </div>
+            <div id="mobile-menu" class="hidden sm:flex sm:items-center sm:space-x-4">
+                <a href="#home" class="text-gray-900 hover:text-blue-600 px-3 py-2">Home</a>
+                <a href="/services" class="text-gray-900 hover:text-blue-600 px-3 py-2">Services</a>
+                <a href="/portfolio" class="text-gray-900 hover:text-blue-600 px-3 py-2">Portfolio</a>
+                <a href="/about" class="text-gray-900 hover:text-blue-600 px-3 py-2">About</a>
                 <a href="#contact" class="btn-primary">Contact</a>
             </div>
         </div>
     </div>
 </nav>
+<script>
+    function toggleMenu() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+</script>

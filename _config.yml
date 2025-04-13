@@ -1,7 +1,7 @@
-title: "Data by Lex"
+title: "DataByLex"
 description: "Personalized data services — migration, automation, cleanup."
-baseurl: ""
-url: "https://kavoondev.github.io/databyalex"
+baseurl: "/databylex.github.io"
+url: "https://kavoondev.github.io"
 destination: _site
 show_drafts: false
 
@@ -20,3 +20,4 @@ exclude:
   - package-lock.json
   - tailwind.config.js
   - postcss.config.js
+  - .github
