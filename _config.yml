@@ -1,0 +1,34 @@
+title: "Data by Lex"
+description: "Personalized data services — migration, automation, cleanup."
+baseurl: "" # якщо сайт не в підкаталозі
+url: "https://databylex.github.io"
+
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+
+
+# title: Data by Lex
+# description: Personalized data services: migration, cleanup, automation
+# baseurl: ""
+# url: "https://databylex.github.io"
+# theme: minima
+# plugins:
+#   - jekyll-seo-tag
+#   - jekyll-feed
+
+# # Tailwind compiled CSS
+# sass:
+#   style: compressed

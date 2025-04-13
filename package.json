@@ -1,0 +1,12 @@
+{
+  "name": "databylex-site",
+  "scripts": {
+    "build": "npx postcss assets/css/main.css -o assets/css/main.build.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16",
+    "postcss-cli": "^10.1.0"
+  }
+}
