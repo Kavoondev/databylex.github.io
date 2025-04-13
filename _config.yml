@@ -1,7 +1,7 @@
 title: "Data by Lex"
 description: "Personalized data services — migration, automation, cleanup."
-baseurl: ""
-url: "https://databylex.github.io"
+baseurl: "/databyalex"
+url: "https://kavoondev.github.io"
 
 theme: minima
 
