@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="{{ '/assets/css/main.build.css' | relative_url }}">
-
 <head>
     {% include head.html %}
 </head>
-
-<body class="bg-gray-100 text-gray-800 font-sans">
-    {% include header.html %}
-    <main class="container mx-auto p-4">
-        {{ content }}
-    </main>
-    {% include footer.html %}
+<body>
+    {{ content }}
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        function validateForm() {
+            alert("Form submission coming soon!");
+            return false;
+        }
+    </script>
 </body>
-
 </html>

@@ -1,6 +1,6 @@
 title: "Data by Lex"
 description: "Personalized data services — migration, automation, cleanup."
-baseurl: "" # якщо сайт не в підкаталозі
+baseurl: ""
 url: "https://databylex.github.io"
 
 theme: minima

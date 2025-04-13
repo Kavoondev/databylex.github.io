@@ -1,216 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
+{% include header.html %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="DataByLex - Modern data solutions for migration, cleanup, and automation. Trusted, personal, and expert services.">
-    <meta name="keywords" content="data migration, data cleanup, automation, DataByLex, cloud integration">
-    <title>DataByLex - Data that Works. Done by Lex.</title>
-    <!-- TailwindCSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Poppins, Open Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-    <!-- Iconify for Icons -->
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #F3F4F6;
-            color: #1F2937;
-            margin: 0;
-            padding: 0;
-        }
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4">Data that Works. Done by Lex.</h1>
+        <p class="text-lg sm:text-xl mb-6 max-w-2xl mx-auto">Transform your data with expert migration, cleanup, and automation. Personal support, trusted results.</p>
+        <a href="#contact" class="btn-accent">Book a Free Consultation</a>
+    </div>
+</section>
 
-        h1,
-        h2,
-        h3 {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .hero {
-            background: linear-gradient(to right, #3B82F6, #10B981);
-            color: #F3F4F6;
-            text-align: center;
-            padding: 6rem 2rem;
-        }
-
-        .btn-primary {
-            background-color: #3B82F6;
-            color: #F3F4F6;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .btn-primary:hover {
-            background-color: #1E40AF;
-        }
-
-        .btn-accent {
-            background-color: #10B981;
-            color: #F3F4F6;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .btn-accent:hover {
-            background-color: #047857;
-        }
-
-        .icon {
-            font-size: 2.5rem;
-            color: #10B981;
-        }
-
-        .service-card {
-            background-color: #FFFFFF;
-            border-radius: 0.5rem;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        footer {
-            background-color: #1F2937;
-            color: #F3F4F6;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Navigation -->
-    <nav class="bg-white shadow sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <h2 class="text-2xl font-bold text-#1F2937">DataByLex</h2>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#home" class="text-#1F2937 hover:text-#3B82F6">Home</a>
-                    <a href="#services" class="text-#1F2937 hover:text-#3B82F6">Services</a>
-                    <a href="#why-us" class="text-#1F2937 hover:text-#3B82F6">Why Us</a>
-                    <a href="#contact" class="btn-primary">Contact</a>
-                </div>
+<!-- What I Do -->
+<section id="services" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">What I Do</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="service-card text-center">
+                <span class="iconify icon mb-4" data-icon="mdi:cloud-upload"></span>
+                <h3 class="text-xl font-semibold mb-2">Data Migration</h3>
+                <p>Seamless transitions to cloud platforms like AWS, Azure, or Google Cloud. Zero downtime, full confidence.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-card text-center">
+                <span class="iconify icon mb-4" data-icon="mdi:broom"></span>
+                <h3 class="text-xl font-semibold mb-2">Data Cleanup</h3>
+                <p>Turn messy data into clean, usable insights. Fast, accurate, and tailored to your needs.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-card text-center">
+                <span class="iconify icon mb-4" data-icon="mdi:robot"></span>
+                <h3 class="text-xl font-semibold mb-2">Automation</h3>
+                <p>Streamline workflows with Python, SQL, and modern tools. Save time, boost efficiency.</p>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl sm:text-5xl font-bold mb-4">Data that Works. Done by Lex.</h1>
-            <p class="text-lg sm:text-xl mb-6 max-w-2xl mx-auto">Transform your data with expert migration, cleanup, and
-                automation. Personal support, trusted results.</p>
-            <a href="#contact" class="btn-accent">Book a Free Consultation</a>
-        </div>
-    </section>
-
-    <!-- What I Do -->
-    <section id="services" class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">What I Do</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="service-card text-center">
-                    <span class="iconify icon mb-4" data-icon="mdi:cloud-upload"></span>
-                    <h3 class="text-xl font-semibold mb-2">Data Migration</h3>
-                    <p>Seamless transitions to cloud platforms like AWS, Azure, or Google Cloud. Zero downtime, full
-                        confidence.</p>
-                </div>
-                <!-- Service 2 -->
-                <div class="service-card text-center">
-                    <span class="iconify icon mb-4" data-icon="mdi:broom"></span>
-                    <h3 class="text-xl font-semibold mb-2">Data Cleanup</h3>
-                    <p>Turn messy data into clean, usable insights. Fast, accurate, and tailored to your needs.</p>
-                </div>
-                <!-- Service 3 -->
-                <div class="service-card text-center">
-                    <span class="iconify icon mb-4" data-icon="mdi:robot"></span>
-                    <h3 class="text-xl font-semibold mb-2">Automation</h3>
-                    <p>Streamline workflows with Python, SQL, and modern tools. Save time, boost efficiency.</p>
-                </div>
+<!-- Why Choose DataByLex -->
+<section id="why-us" class="py-16 bg-#F3F4F6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">Why Choose DataByLex</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="text-center">
+                <span class="iconify icon mb-4" data-icon="mdi:shield-check"></span>
+                <h3 class="text-xl font-semibold mb-2">Trusted Expertise</h3>
+                <p>Years of experience delivering data solutions for businesses big and small.</p>
+            </div>
+            <div class="text-center">
+                <span class="iconify icon mb-4" data-icon="mdi:account-heart"></span>
+                <h3 class="text-xl font-semibold mb-2">Personal Support</h3>
+                <p>Direct, friendly communication. I’m with you every step of the way.</p>
+            </div>
+            <div class="text-center">
+                <span class="iconify icon mb-4" data-icon="mdi:rocket"></span>
+                <h3 class="text-xl font-semibold mb-2">Proven Results</h3>
+                <p>Reduced costs by 30%, saved 100+ hours—real impact for real clients.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Why Choose DataByLex -->
-    <section id="why-us" class="py-16 bg-#F3F4F6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-12">Why Choose DataByLex</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <span class="iconify icon mb-4" data-icon="mdi:shield-check"></span>
-                    <h3 class="text-xl font-semibold mb-2">Trusted Expertise</h3>
-                    <p>Years of experience delivering data solutions for businesses big and small.</p>
-                </div>
-                <div class="text-center">
-                    <span class="iconify icon mb-4" data-icon="mdi:account-heart"></span>
-                    <h3 class="text-xl font-semibold mb-2">Personal Support</h3>
-                    <p>Direct, friendly communication. I’m with you every step of the way.</p>
-                </div>
-                <div class="text-center">
-                    <span class="iconify icon mb-4" data-icon="mdi:rocket"></span>
-                    <h3 class="text-xl font-semibold mb-2">Proven Results</h3>
-                    <p>Reduced costs by 30%, saved 100+ hours—real impact for real clients.</p>
-                </div>
-            </div>
+<!-- CTA Section -->
+<section id="contact" class="py-16 bg-#3B82F6 text-#F3F4F6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Data?</h2>
+        <p class="text-lg mb-6 max-w-2xl mx-auto">Let’s talk about your needs. Book a free consultation or reach out directly.</p>
+        <div class="flex justify-center space-x-4">
+            <a href="https://calendly.com/your-link" target="_blank" class="btn-accent">Schedule a Call</a>
+            <a href="mailto:info@databylex.com" class="btn-primary">Email Me</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CTA Section -->
-    <section id="contact" class="py-16 bg-#3B82F6 text-#F3F4F6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Data?</h2>
-            <p class="text-lg mb-6 max-w-2xl mx-auto">Let’s talk about your needs. Book a free consultation or reach out
-                directly.</p>
-            <div class="flex justify-center space-x-4">
-                <a href="https://calendly.com/your-link" target="_blank" class="btn-accent">Schedule a Call</a>
-                <a href="mailto:info@databylex.com" class="btn-primary">Email Me</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 DataByLex. All rights reserved. | <a href="mailto:info@databylex.com"
-                class="text-#10B981">info@databylex.com</a></p>
-    </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Smooth scroll for nav links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Simple form validation (if you add a form later)
-        function validateForm() {
-            alert("Form submission coming soon!");
-            return false;
-        }
-    </script>
-</body>
-
-</html>
+{% include footer.html %}

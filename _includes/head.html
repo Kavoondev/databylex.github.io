@@ -1,6 +1,73 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ page.title }} | {{ site.title }}</title>
-<meta name="description" content="{{ site.description }}">
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-{% seo %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+    content="DataByLex - Modern data solutions for migration, cleanup, and automation. Trusted, personal, and expert services.">
+<meta name="keywords" content="data migration, data cleanup, automation, DataByLex, cloud integration">
+<title>{{ page.title | default: site.title }}</title>
+<link rel="stylesheet" href="/assets/css/main.build.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #F3F4F6;
+        color: #1F2937;
+        margin: 0;
+        padding: 0;
+    }
+    h1, h2, h3 {
+        font-family: 'Poppins', sans-serif;
+    }
+    .hero {
+        background: linear-gradient(to right, #3B82F6, #10B981);
+        color: #F3F4F6;
+        text-align: center;
+        padding: 6rem 2rem;
+    }
+    .btn-primary {
+        background-color: #3B82F6;
+        color: #F3F4F6;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .btn-primary:hover {
+        background-color: #1E40AF;
+    }
+    .btn-accent {
+        background-color: #10B981;
+        color: #F3F4F6;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .btn-accent:hover {
+        background-color: #047857;
+    }
+    .icon {
+        font-size: 2.5rem;
+        color: #10B981;
+    }
+    .service-card {
+        background-color: #FFFFFF;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+    .service-card:hover {
+        transform: translateY(-5px);
+    }
+    footer {
+        background-color: #1F2937;
+        color: #F3F4F6;
+        text-align: center;
+        padding: 2rem;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
