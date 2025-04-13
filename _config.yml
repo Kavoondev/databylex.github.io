@@ -21,3 +21,4 @@ exclude:
   - tailwind.config.js
   - postcss.config.js
   - .github
+  - README.md
